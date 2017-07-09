@@ -47,7 +47,6 @@ def document_word_frequency(dataset):
     with open('documentfrequency.csv','w') as file_writer:
         for word in document_frequency:
             file_writer.write(word + ',' + str(math.log(document_count/document_frequency[word])) + '\n')
-    print(document_count)
 
 
 
